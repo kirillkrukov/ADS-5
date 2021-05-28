@@ -1,4 +1,7 @@
 // Copyright 2021 NNTU-CS
+#ifndef INCLUDE_TPQUEUE_H_
+#define INCLUDE_TPQUEUE_H_
+#include <cassert>
 template<typename T>
 class TPQueue {
  private:
@@ -16,7 +19,6 @@ item->next = nullptr;
 item->prev = prev;
 return item;
 }
-
  public:
 TPQueue() :head(nullptr), tail(nullptr) {}
 ~TPQueue() {
@@ -60,10 +62,8 @@ head = temp;
 return data;
 }
 };
-
 struct SYM {
   char ch;
   int  prior;
 };
-
 #endif // INCLUDE_TPQUEUE_H_
