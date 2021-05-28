@@ -19,6 +19,7 @@ item->next = nullptr;
 item->prev = prev;
 return item;
 }
+ 
  public:
 TPQueue() :head(nullptr), tail(nullptr) {}
 ~TPQueue() {
@@ -66,4 +67,4 @@ struct SYM {
   char ch;
   int  prior;
 };
-#endif // INCLUDE_TPQUEUE_H_
+#endif  // INCLUDE_TPQUEUE_H_
